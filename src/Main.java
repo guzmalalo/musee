@@ -1,3 +1,4 @@
 void main() {
-    System.out.println("Hello");
+    Musee m =  new Musee("Louvre");
+    System.out.println(m);
 }
