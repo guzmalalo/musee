@@ -1,8 +1,14 @@
 public class Musee {
-    private String nom;
+    private final String nom;
 
+    // ---  Constructors
     public Musee(String nom) {
         this.nom = nom;
+    }
+
+    // --- Getters
+    public String getNom(){
+        return nom;
     }
 
     @Override
