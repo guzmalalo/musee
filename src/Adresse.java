@@ -33,6 +33,6 @@ public class Adresse {
     // --- Overrides
     @Override
     public String toString() {
-        return numero + ", Rue " + rue + ", " + ville + "," + codePostal;
+        return numero + " " + rue + ", " + codePostal + " " + ville;
     }
 }
