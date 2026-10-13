@@ -1,7 +1,7 @@
 public class Musee {
     private final String nom;
 
-    // ---  Constructors
+    // --- Constructors
     public Musee(String nom) {
         this.nom = nom;
     }
@@ -11,6 +11,7 @@ public class Musee {
         return nom;
     }
 
+    // --- Overrides
     @Override
     public String toString() {
         return "Musee : " + nom ;

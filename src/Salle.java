@@ -3,14 +3,14 @@ public class Salle {
     private String nom;
     private float superficie;
 
-    // --- constructeurs
+    // --- Constructors
     public Salle(int etage, String nom, float superficie) {
         this.etage = etage;
         this.nom = nom;
         this.superficie = superficie;
     }
 
-    // --- getters and setters
+    // --- Getters and setters
     public int getEtage() {
         return etage;
     }
@@ -35,15 +35,9 @@ public class Salle {
         this.superficie = superficie;
     }
 
-    // --- overrides
-
-
+    // --- Overrides
     @Override
     public String toString() {
-        return "Salle{" +
-                "etage=" + etage +
-                ", nom='" + nom + '\'' +
-                ", superficie=" + superficie +
-                '}';
+        return "Salle : " + nom + ", étage " + etage + ", " + superficie + " m²";
     }
 }
