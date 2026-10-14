@@ -1,8 +1,8 @@
 public class Oeuvre {
     private String nom;
-    private int annee;
-    private float largeur;
-    private float hauteur;
+    private final int annee;
+    private final float largeur;
+    private final float hauteur;
 
     // --- Constructors
     public Oeuvre(String nom, int annee, float largeur, float hauteur) {
@@ -25,24 +25,12 @@ public class Oeuvre {
         return annee;
     }
 
-    public void setAnnee(int annee) {
-        this.annee = annee;
-    }
-
-    public float getLargeur() {
-        return largeur;
-    }
-
-    public void setLargeur(float largeur) {
-        this.largeur = largeur;
+    public static float getLargeur() {
+        return 1.0f;
     }
 
     public float getHauteur() {
         return hauteur;
-    }
-
-    public void setHauteur(float hauteur) {
-        this.hauteur = hauteur;
     }
 
     // --- Overrides

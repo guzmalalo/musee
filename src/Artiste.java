@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class Artiste {
     private String nom;
     private String prenom;
-    private LocalDate dateNaissance;
+    private final LocalDate dateNaissance;
 
     // --- Constructors
     public Artiste(String nom, String prenom, LocalDate dateNaissance) {
@@ -31,10 +31,6 @@ public class Artiste {
 
     public LocalDate getDateNaissance() {
         return dateNaissance;
-    }
-
-    public void setDateNaissance(LocalDate dateNaissance) {
-        this.dateNaissance = dateNaissance;
     }
 
     // --- Overrides

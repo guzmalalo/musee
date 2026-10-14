@@ -1,7 +1,7 @@
 public class Salle {
     private int etage;
     private String nom;
-    private float superficie;
+    private final float superficie;
 
     // --- Constructors
     public Salle(int etage, String nom, float superficie) {
@@ -29,10 +29,6 @@ public class Salle {
 
     public float getSuperficie() {
         return superficie;
-    }
-
-    public void setSuperficie(float superficie) {
-        this.superficie = superficie;
     }
 
     // --- Overrides

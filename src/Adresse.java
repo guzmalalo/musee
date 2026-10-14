@@ -1,5 +1,5 @@
 public class Adresse {
-    private final int numero;
+    private  int numero;
     private final String rue;
     private final String codePostal;
     private final String ville;
@@ -29,6 +29,9 @@ public class Adresse {
         return ville;
     }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
     // --- Overrides
     @Override
