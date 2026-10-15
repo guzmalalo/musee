@@ -4,6 +4,9 @@ public class Oeuvre {
     private final float largeur;
     private final float hauteur;
 
+    // Une oeuvre est associée à une artiste
+    private Artiste artiste;
+
     // --- Constructors
     public Oeuvre(String nom, int annee, float largeur, float hauteur) {
         this.nom = nom;
@@ -31,6 +34,10 @@ public class Oeuvre {
 
     public float getHauteur() {
         return hauteur;
+    }
+
+    public void setArtiste(Artiste artiste){
+        this.artiste = artiste;
     }
 
     // --- Overrides
