@@ -28,6 +28,23 @@ public class Musee {
         salles.add(temp);
     }
 
+    public void ajouterOeuvre(String nomSalle, Oeuvre o){
+
+        Salle temp = null;
+
+        // chercher la salle nom Salle
+        for (Salle s : salles ){
+            if(s.getNom().equalsIgnoreCase(nomSalle)){
+                // on a trouvé la salle
+                s.ajouterOeuvre(o);
+                System.out.println("Oeuvre ajoutée");
+                return;
+            }
+        }
+
+        System.out.println("Salle non trouvée");
+    }
+
     // --- Overrides
     @Override
     public String toString() {

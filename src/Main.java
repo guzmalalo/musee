@@ -8,7 +8,10 @@ void main() {
 
 
     Artiste artiste = new Artiste("Delacroix", "Eugène", LocalDate.of(1798, 4, 26));
-    Oeuvre o = new Oeuvre("La Liberté guidant le peuple", 1830, 3.25f, 2.60f);
+    Oeuvre liberte = new Oeuvre("La Liberté guidant le peuple", 1830, 3.25f, 2.60f);
+
+    m.ajouterOeuvre("Salle Mollien", liberte);
+
 
     System.out.println(m);
 
