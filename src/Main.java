@@ -8,7 +8,9 @@ void main() {
 
 
     Artiste eugene = new Artiste("Delacroix", "Eugène", LocalDate.of(1798, 4, 26));
-    Oeuvre liberte = new Oeuvre("La Liberté guidant le peuple", 1830, 3.25f, 2.60f);
+
+    Peinture liberte = new Peinture("La Liberté guidant le peuple",1830, 3.25f, 2.60f,"Oleo");
+
     liberte.setArtiste(eugene);
 
     m.ajouterOeuvre("Salle Mollien", liberte);

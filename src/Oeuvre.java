@@ -1,4 +1,4 @@
-public class Oeuvre {
+public abstract class Oeuvre {
     private String nom;
     private final int annee;
     private final float largeur;
