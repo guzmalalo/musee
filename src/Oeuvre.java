@@ -43,6 +43,6 @@ public abstract class Oeuvre {
     // --- Overrides
     @Override
     public String toString() {
-        return nom + " (" + annee + ")";
+        return nom + " (" + annee + ") - " + largeur +"x"+hauteur+"cm";
     }
 }

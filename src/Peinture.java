@@ -10,4 +10,9 @@ public class Peinture extends Oeuvre{
         return technique;
     }
 
+    @Override
+    public String toString(){
+        return super.toString() + "-" + technique;
+    }
+
 }
