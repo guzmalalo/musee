@@ -1,6 +1,9 @@
 import java.time.LocalDate;
 
 void main() {
+    App app = new App();
+    app.run();
+    /*
     Musee m =  new Musee("Louvre", 1,"Rivoli", "75001", "Paris");
 
     m.ajouterSalle(0, "Récéption", 100.0f);
@@ -19,4 +22,7 @@ void main() {
 
     System.out.println(m);
 
+    System.out.println(" Il y a " + Oeuvre.getNbOeuvres() +"oeuvres");
+    System.out.println(" Il y a " + Peinture.getNbPeintures() +" peintures");
+    */
 }
